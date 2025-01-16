@@ -4,12 +4,8 @@
     {
         static void Main(string[] args)
         {
-            double nota_final, n1, n2, n3, n4;
+            double nota_final, n1, n2, n3, n4, n5;
             string resultado;
-
-            Console.Write("digite a nota final do aluno: ");
-            nota_final = Convert.ToDouble(Console.ReadLine());
-
 
             Console.Write("digite a segunda nota do aluno: ");
             n1 = Convert.ToDouble(Console.ReadLine());
@@ -23,8 +19,10 @@
                  Console.Write("digite a segunda nota do aluno: ");
             n4 = Convert.ToDouble(Console.ReadLine());
 
-            nota_final = (n1 + n2 + n3 + n4) / 4;
+            Console.Write("digite a quinta nota do aluno: ");
+            n5 = Convert.ToDouble(Console.ReadLine());
 
+            nota_final = (n1 + n2 + n3 + n4 + n5) / 5;
 
             if (nota_final >= 70)
                 {
