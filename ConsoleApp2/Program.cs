@@ -17,6 +17,18 @@
             if ((ladoA < ladoB + ladoC) && (ladoB < ladoA + ladoC) && (ladoC < ladoA + ladoB))
             {
                 Console.WriteLine("Os valores informados formam um triangulo");
+                if (( ladoA == ladoB) && (ladoB == ladoC))
+                    {
+                    Console.WriteLine("ele é um triangulo equilátero.");
+                }
+                else if ((ladoA == ladoB)|| (ladoA== ladoC)||(ladoB == ladoC))
+                {
+                    Console.WriteLine("ele é um triangulo isóceles");
+                }
+                else
+                {
+                    Console.WriteLine("ele é um triangulo escaleno");
+                }
             }
             else
             {
